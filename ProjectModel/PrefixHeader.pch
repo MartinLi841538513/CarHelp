@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  ProjectModel
+//
+//  Created by Gao Huang on 14-11-28.
+//  Copyright (c) 2014年 Martin. All rights reserved.
+//
+
+#ifndef ProjectModel_PrefixHeader_pch
+#define ProjectModel_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#import <UIKit/UIKit.h>
+#import "SharedAction.h"
+#import "SharedData.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+
+typedef void (^doneWithArray)(NSArray *array);
+typedef void (^doneWithObject)(id object);
+
+#define DeviceFrame [UIScreen mainScreen].bounds
+
+#define MAMapKey @"46c6a2d309dc726bc4e4fd92ebc54d53"
+#define AppDownLoadURL @"https://itunes.apple.com/cn/app/e-xiao-qu/id914487546?mt=8"
+#define UMengKEY @"547d8a3afd98c5f1ca000fcf"
+
+#define IP @"http://www.greenwh.com"
+#define PrexURL [NSString stringWithFormat:@"%@/wap.php/",IP]
+#define LoginURL [PrexURL stringByAppendingString: @"Member/member_login?loginname=%@&password=%@"]
+#define ValicodeURL [PrexURL stringByAppendingString: @"Member/valicode?loginname=%@"]
+//协议
+#define AgreeURL [PrexURL stringByAppendingString: @"Member/agree"]
+//注册
+#define RegistURL [PrexURL stringByAppendingString: @"Member/regist?loginname=%@&password=%@&Passwd=%@&code=%@"]

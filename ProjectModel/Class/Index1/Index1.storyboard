@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--nav1-->
+        <scene sceneID="yNk-2V-F7r">
+            <objects>
+                <navigationController storyboardIdentifier="Index1NavController" title="nav1" id="zGp-Fi-v6C" customClass="Index1NavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="nav1" id="0fj-ED-a4U"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="K46-pl-eEl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Zvs-YH-ywD" kind="relationship" relationship="rootViewController" id="ICc-mW-XrP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ku5-al-oyi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-516" y="349"/>
+        </scene>
+        <!--index1-->
+        <scene sceneID="fTw-II-bgl">
+            <objects>
+                <viewController storyboardIdentifier="Index1ViewController" id="Zvs-YH-ywD" customClass="Index1ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8DL-Ou-bVH"/>
+                        <viewControllerLayoutGuide type="bottom" id="wsp-8w-rYG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fUp-mX-Wlc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="index1" id="aR4-bG-BIo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="No1-km-CyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="349"/>
+        </scene>
+    </scenes>
+</document>
